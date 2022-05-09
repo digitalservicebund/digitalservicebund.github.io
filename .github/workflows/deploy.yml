@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: "16.13.0"
           cache: "npm"
+      - run: npm install
       - name: Build page
         run: npm run build
       - name: Deploy to GitHub Pages
