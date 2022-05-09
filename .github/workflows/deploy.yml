@@ -17,6 +17,8 @@ jobs:
         with:
           node-version: "16.13.0"
           cache: "npm"
+      - name: validate github workflow files
+        uses: digitalservice4germany/github-actions/github-actions-linter@1cb8bd8ff785c63b2cf13c2fe63241245a8ac7ef
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: "2.6"
