@@ -1,0 +1,41 @@
+{
+  "name": "digitalservice.github.io",
+  "version": "0.0.1",
+  "description": "Simple page to show the projects of digitalservice at a glance",
+  "main": "gulpfile.babel.js",
+  "devDependencies": {
+    "@digitalservice4germany/style-dictionary": "^0.0.4",
+    "autoprefixer": "^10.3.4",
+    "babel-preset-env": "1.7.0",
+    "babel-register": "6.26.0",
+    "browser-sync": "2.27.4",
+    "browsersync": "0.0.1-security",
+    "cross-env": "7.0.3",
+    "cross-spawn": "7.0.3",
+    "cssnano": "5.0.8",
+    "gulp": "4.0.2",
+    "gulp-postcss": "9.0.1",
+    "postcss": "^8.3.6",
+    "postcss-import": "14.0.2",
+    "tailwindcss": "^3.0.24"
+  },
+  "scripts": {
+    "build:production": "cross-env NODE_ENV=production gulp",
+    "build:dev": "cross-env NODE_ENV=development gulp",
+    "build": "npm run build:production",
+    "dev": "cross-env NODE_ENV=development gulp serve",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalservice4germany/digitalservice.github.io.git"
+  },
+  "author": "Christian Kaatz<christian.kaatz@digitalservice.bund.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalservice4germany/digitalservice.github.io/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
