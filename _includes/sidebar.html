@@ -1,0 +1,16 @@
+<div class="color-black sticky top-0 p-4 w-full">
+  <!-- navigation -->
+  <ul class="flex flex-col overflow-hidden list-none">
+    {% assign navigation_pages = site.data.navigation %} {% for p in
+    navigation_pages %}
+    <li class="my-px">
+      <a
+        href="{{ p.url }}"
+        class="flex flex-row items-center font-light h-36 px-4 hover:bg-gray-200 rounded-sm {% if p.url == page.url %}text-blue-800 bg-gray-100{% endif %}"
+      >
+        {{ p.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
