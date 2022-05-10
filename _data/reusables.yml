@@ -1,0 +1,9 @@
+- title: github-actions
+  url: https://github.com/digitalservice4germany/github-actions
+  description: "Reusable workflows and actions for GitHub Actions."
+- title: github-actions-linter
+  url: https://github.com/digitalservice4germany/github-actions-linter
+  description: "Linting workflow files for GitHub Actions"
+- title: terraform-modules
+  url: https://github.com/digitalservice4germany/terraform-modules
+  description: "Reusable terraform modules to work with open telecom cloud"

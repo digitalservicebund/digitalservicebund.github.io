@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to github pages
 
 concurrency: Deployment
 
@@ -24,7 +24,7 @@ jobs:
           node-version: "16.13.0"
           cache: "npm"
       - name: validate github workflow files
-        uses: digitalservice4germany/github-actions/github-actions-linter@1cb8bd8ff785c63b2cf13c2fe63241245a8ac7ef
+        uses: digitalservice4germany/github-actions/github-actions-linter@9f123efaec38519ca50547171b73a33564318758
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: "2.6"
@@ -33,7 +33,8 @@ jobs:
           sudo apt-get -yqq install libpq-dev
           gem install bundler
           bundle install --jobs 4 --retry 3
-      - run: npm install
+      - name: Install node modules
+        run: npm install
       - name: Build page
         run: npm run build
       - name: Deploy to GitHub Pages

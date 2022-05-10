@@ -1,7 +1,7 @@
 ---
 title: Templates
 layout: projects
-description: An example of a template
+description: Templates to quickstart projects
 data-category: templates
 ---
 
