@@ -2,7 +2,9 @@
   url: "/"
 - title: Design System
   url: "/projects/design-system.html"
-- title: Templates
-  url: "/projects/templates.html"
+- title: Projects & Products
+  url: "/projects/projects.html"
 - title: Reusables
   url: "/projects/reusables.html"
+- title: Templates
+  url: "/projects/templates.html"
