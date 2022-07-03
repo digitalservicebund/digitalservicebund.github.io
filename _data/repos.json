@@ -3,140 +3,140 @@
     "organization": {
       "id": "MDEyOk9yZ2FuaXphdGlvbjcyOTcxNTE0",
       "name": "DigitalService",
-      "url": "https://github.com/digitalservice4germany",
+      "url": "https://github.com/digitalservicebund",
       "repositories": {
         "nodes": [
           {
             "id": "MDEwOlJlcG9zaXRvcnkzMjc5NzU4NTY=",
             "name": "public_documents",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/public_documents"
+            "url": "https://github.com/digitalservicebund/public_documents"
           },
           {
             "id": "MDEwOlJlcG9zaXRvcnkzNzI4NjAwNDk=",
             "name": "verika-architecture",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/verika-architecture"
+            "url": "https://github.com/digitalservicebund/verika-architecture"
           },
           {
             "id": "MDEwOlJlcG9zaXRvcnkzODEwNTAwNDc=",
             "name": "steuerlotse",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/steuerlotse"
+            "url": "https://github.com/digitalservicebund/steuerlotse"
           },
           {
             "id": "MDEwOlJlcG9zaXRvcnkzODM0NzA2MDY=",
             "name": "backend-challenge",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/backend-challenge"
+            "url": "https://github.com/digitalservicebund/backend-challenge"
           },
           {
             "id": "MDEwOlJlcG9zaXRvcnk0MDYyNzY2ODk=",
             "name": "frontend-challenge",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/frontend-challenge"
+            "url": "https://github.com/digitalservicebund/frontend-challenge"
           },
           {
             "id": "R_kgDOGGqhgw",
             "name": "java-application-template",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/java-application-template"
+            "url": "https://github.com/digitalservicebund/java-application-template"
           },
           {
             "id": "R_kgDOGR6GjQ",
             "name": "mitra-frontend",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/mitra-frontend"
+            "url": "https://github.com/digitalservicebund/mitra-frontend"
           },
           {
             "id": "R_kgDOGh6Bxg",
             "name": "digital-service-library",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/digital-service-library"
+            "url": "https://github.com/digitalservicebund/digital-service-library"
           },
           {
             "id": "R_kgDOGi_2DA",
             "name": "grundsteuer",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/grundsteuer"
+            "url": "https://github.com/digitalservicebund/grundsteuer"
           },
           {
             "id": "R_kgDOGvQnNQ",
             "name": "style-dictionary",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/style-dictionary"
+            "url": "https://github.com/digitalservicebund/style-dictionary"
           },
           {
             "id": "R_kgDOGw-9Aw",
             "name": "erica",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/erica"
+            "url": "https://github.com/digitalservicebund/erica"
           },
           {
             "id": "R_kgDOG6-RVw",
             "name": "useid-architecture",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/useid-architecture"
+            "url": "https://github.com/digitalservicebund/useid-architecture"
           },
           {
             "id": "R_kgDOG_HNMA",
             "name": "typescript-vite-application-template",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/typescript-vite-application-template"
+            "url": "https://github.com/digitalservicebund/typescript-vite-application-template"
           },
           {
             "id": "R_kgDOHEAL5w",
             "name": "kotlin-application-template",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/kotlin-application-template"
+            "url": "https://github.com/digitalservicebund/kotlin-application-template"
           },
           {
             "id": "R_kgDOHFV8ng",
             "name": "useid-backend-service",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/useid-backend-service"
+            "url": "https://github.com/digitalservicebund/useid-backend-service"
           },
           {
             "id": "R_kgDOHF1SqQ",
             "name": "uptime-monitor",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/uptime-monitor"
+            "url": "https://github.com/digitalservicebund/uptime-monitor"
           },
           {
             "id": "R_kgDOHH3jaQ",
             "name": "terraform-modules",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/terraform-modules"
+            "url": "https://github.com/digitalservicebund/terraform-modules"
           },
           {
             "id": "R_kgDOHIA6RQ",
             "name": "ris-backend-service",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/ris-backend-service"
+            "url": "https://github.com/digitalservicebund/ris-backend-service"
           },
           {
             "id": "R_kgDOHOC6Lw",
             "name": "github-actions",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/github-actions"
+            "url": "https://github.com/digitalservicebund/github-actions"
           },
           {
             "id": "R_kgDOHO44fg",
-            "name": "digitalservice4germany.github.io",
+            "name": "digitalservicebund.github.io",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/digitalservice4germany.github.io"
+            "url": "https://github.com/digitalservicebund/digitalservicebund.github.io"
           },
           {
             "id": "R_kgDOHPqkDg",
             "name": "useid-app-android",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/useid-app-android"
+            "url": "https://github.com/digitalservicebund/useid-app-android"
           },
           {
             "id": "R_kgDOHPqmCg",
             "name": "useid-app-ios",
             "visibility": "PUBLIC",
-            "url": "https://github.com/digitalservice4germany/useid-app-ios"
+            "url": "https://github.com/digitalservicebund/useid-app-ios"
           }
         ]
       }

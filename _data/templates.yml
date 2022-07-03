@@ -1,9 +1,9 @@
 - title: java-application-template
-  url: https://github.com/digitalservice4germany/java-application-template
+  url: https://github.com/digitalservicebund/java-application-template
   description: "Bootstrap a Java application with Spring WebFlux, Gradle and Continuous Delivery"
 - title: typescript-vite-application-template
-  url: https://github.com/digitalservice4germany/typescript-vite-application-template
+  url: https://github.com/digitalservicebund/typescript-vite-application-template
   description: "Bootstrap a TypeScript application with Vite dev server and Continuous Delivery"
 - title: kotlin-application-template
-  url: https://github.com/digitalservice4germany/kotlin-application-template
+  url: https://github.com/digitalservicebund/kotlin-application-template
   description: "Bootstrap a Kotlin application with Spring WebFlux, Gradle and Continuous Delivery"
