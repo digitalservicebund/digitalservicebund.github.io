@@ -1,30 +1,30 @@
 - title: mitra-frontend
-  url: https://github.com/digitalservice4germany/mitra-frontend
+  url: https://github.com/digitalservicebund/mitra-frontend
   description: "Contract generator web application"
 - title: verika-architecture
-  url: https://github.com/digitalservice4germany/verika-architecture
+  url: https://github.com/digitalservicebund/verika-architecture
   description: "Architecture of the planned VeRIKA / NeuRIS project"
 - title: ris-backend-service
-  url: https://github.com/digitalservice4germany/ris-backend-service
+  url: https://github.com/digitalservicebund/ris-backend-service
   description: "RIS Backend/API service"
 - title: steuerlotse
-  url: https://github.com/digitalservice4germany/steuerlotse
-  description: "Code repository of the Steuerlotse by DigitalService4Germany"
+  url: https://github.com/digitalservicebund/steuerlotse
+  description: "Code repository of the Steuerlotse by DigitalService"
 - title: grundsteuer
-  url: https://github.com/digitalservice4germany/grundsteuer
+  url: https://github.com/digitalservicebund/grundsteuer
   description: "Code repository of the grundsteuer project by DigitalService"
 - title: erica
-  url: https://github.com/digitalservice4germany/erica
+  url: https://github.com/digitalservicebund/erica
   description: "Erica service for communicating with ELSTER via ERiC"
 - title: useid-architecture
-  url: https://github.com/digitalservice4germany/useid-architecture
+  url: https://github.com/digitalservicebund/useid-architecture
   description: "Architecture of the planned UseID project"
 - title: useid-backend-service
-  url: https://github.com/digitalservice4germany/useid-backend-service
+  url: https://github.com/digitalservicebund/useid-backend-service
   description: "Backend and Widget Service for UseID"
 - title: useid-app-android
-  url: https://github.com/digitalservice4germany/useid-app-android
+  url: https://github.com/digitalservicebund/useid-app-android
   description: "Android client for the UseID project"
 - title: useid-app-ios
-  url: https://github.com/digitalservice4germany/useid-app-ios
+  url: https://github.com/digitalservicebund/useid-app-ios
   description: "iOS client for the UseID project"

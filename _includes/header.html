@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/DS_Logo_Favicon.png" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <script src="https://unpkg.com/alpinejs" defer></script>
   </head>
 
-  <body>
-    <div class="w-full sticky h-64 border-b">
-      <a href="/"><img class="ml-32 w-64" src="{{ site.baseurl }}/assets/images/ds4g-logo.svg" /></a>
-    </div>
+  <body x-data="{ openMenu : false }" :class="openMenu ? 'overflow-hidden' : 'overflow-visible' ">
 </html>
