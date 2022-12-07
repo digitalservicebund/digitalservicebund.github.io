@@ -15,6 +15,8 @@
 - [useid-backend-service](https://github.com/digitalservicebund/useid-backend-service) - Backend and Widget Service for UseID
 - [useid-app-android](https://github.com/digitalservicebund/useid-app-android) - Android client for the UseID project
 - [useid-app-ios](https://github.com/digitalservicebund/useid-app-ios) - iOS client for the UseID project
+- [useid-eservice-example](https://github.com/digitalservicebund/useid-eservice-example) - example application for an eService integrating
+- [useid-eservice-sdk](https://github.com/digitalservicebund/useid-eservice-sdk) - SDK for eService
 
 ## REUSABLES
 - [github-actions](https://github.com/digitalservicebund/github-actions) - Reusable workflows and actions for GitHub Actions.

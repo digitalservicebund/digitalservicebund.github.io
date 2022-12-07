@@ -28,3 +28,9 @@
 - title: useid-app-ios
   url: https://github.com/digitalservicebund/useid-app-ios
   description: "iOS client for the UseID project"
+- title: useid-eservice-example
+  url: https://github.com/digitalservicebund/useid-eservice-example
+  description: "example application for an eService integrating"
+- title: useid-eservice-sdk
+  url: https://github.com/digitalservicebund/useid-eservice-sdk
+  description: "SDK for eService"
