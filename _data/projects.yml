@@ -1,8 +1,8 @@
 - title: mitra-frontend
   url: https://github.com/digitalservicebund/mitra-frontend
   description: "Contract generator web application"
-- title: verika-architecture
-  url: https://github.com/digitalservicebund/verika-architecture
+- title: neuris-architecture
+  url: https://github.com/digitalservicebund/neuris-architecture
   description: "Architecture of the planned VeRIKA / NeuRIS project"
 - title: ris-backend-service
   url: https://github.com/digitalservicebund/ris-backend-service
@@ -10,27 +10,36 @@
 - title: steuerlotse
   url: https://github.com/digitalservicebund/steuerlotse
   description: "Code repository of the Steuerlotse by DigitalService"
+  license: MIT
 - title: grundsteuer
   url: https://github.com/digitalservicebund/grundsteuer
   description: "Code repository of the grundsteuer project by DigitalService"
+  license: MIT
 - title: erica
   url: https://github.com/digitalservicebund/erica
   description: "Erica service for communicating with ELSTER via ERiC"
+  license: MIT
 - title: useid-architecture
   url: https://github.com/digitalservicebund/useid-architecture
   description: "Architecture of the planned UseID project"
+  license: EUPL-1.2
 - title: useid-backend-service
   url: https://github.com/digitalservicebund/useid-backend-service
   description: "Backend and Widget Service for UseID"
+  license: EUPL-1.2
 - title: useid-app-android
   url: https://github.com/digitalservicebund/useid-app-android
   description: "Android client for the UseID project"
+  license: GPL-3.0
 - title: useid-app-ios
   url: https://github.com/digitalservicebund/useid-app-ios
   description: "iOS client for the UseID project"
+  license: GPL-3.0
 - title: useid-eservice-example
   url: https://github.com/digitalservicebund/useid-eservice-example
   description: "example application for an eService integrating"
+  license: EUPL-1.2
 - title: useid-eservice-sdk
   url: https://github.com/digitalservicebund/useid-eservice-sdk
   description: "SDK for eService"
+  license: EUPL-1.2

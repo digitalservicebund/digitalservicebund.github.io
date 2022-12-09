@@ -1,6 +1,8 @@
 - title: style-dictionary
   url: https://github.com/digitalservicebund/style-dictionary
   description: "Keep styles consistent and synchronized across multiple platforms."
+  license: MIT
 - title: digital-service-library
   url: https://github.com/digitalservicebund/digital-service-library
   description: Component Library for and by DigitalService
+  license: MIT

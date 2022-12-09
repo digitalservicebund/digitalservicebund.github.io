@@ -1,9 +1,12 @@
 - title: github-actions
   url: https://github.com/digitalservicebund/github-actions
   description: "Reusable workflows and actions for GitHub Actions."
+  license: MIT
 - title: github-actions-linter
   url: https://github.com/digitalservicebund/github-actions-linter
   description: "Linting workflow files for GitHub Actions"
+  license: MIT
 - title: terraform-modules
   url: https://github.com/digitalservicebund/terraform-modules
   description: "Reusable terraform modules to work with open telecom cloud"
+  license: MIT
