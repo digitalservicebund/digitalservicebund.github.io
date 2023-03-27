@@ -3,10 +3,10 @@ image: node:lts
 # Functions that should be executed before the build script is run
 before_script:
   - npm ci
-  - npm run build
-  - cp -r _site public
 pages:
-  script: []
+  script:
+    - npm run build
+    - cp -r _site public
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
