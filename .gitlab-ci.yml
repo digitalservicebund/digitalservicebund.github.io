@@ -1,8 +1,9 @@
 # The Docker image that will be used to build your app
-image: ruby:3-bullseye
+image: ruby:3.1.3-bullseye
 # Functions that should be executed before the build script is run
 before_script:
   - curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n | bash -s lts
+  - n lts
   - npm ci
   - gem install bundler
   - bundle install
