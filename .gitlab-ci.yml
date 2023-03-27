@@ -1,7 +1,8 @@
 # The Docker image that will be used to build your app
-image: node:lts
+image: ubuntu:latest
 # Functions that should be executed before the build script is run
 before_script:
+  - apt-get install -qq ruby-full nodejs
   - npm ci
   - gem install bundler
   - bundle install
