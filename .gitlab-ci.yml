@@ -2,8 +2,8 @@
 image: ubuntu:latest
 # Functions that should be executed before the build script is run
 before_script:
-  - apt-get update -qq
-  - apt-get install -qq ruby-full nodejs
+  - apt update
+  - apt install -y ruby-full nodejs
   - npm ci
   - gem install bundler
   - bundle install
