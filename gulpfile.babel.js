@@ -29,6 +29,24 @@ task("buildJekyll", () => {
   return spawn("bundle", args, { stdio: "inherit" });
 });
 
+task("buildJekyllOpenCode", () => {
+  browserSync.notify("Building site for opencode...");
+
+  const args = [
+    "exec",
+    jekyll,
+    "build",
+    "--config",
+    "_config.yml,_config.opencode.yml",
+  ];
+
+  if (isDevelopmentBuild) {
+    args.push("--incremental");
+  }
+
+  return spawn("bundle", args, { stdio: "inherit" });
+});
+
 task("processStyles", () => {
   browserSync.notify("Compiling styles...");
 
@@ -72,6 +90,8 @@ task("startServer", () => {
 });
 
 const buildSite = series("buildJekyll", "processStyles");
+const buildSiteForOpenCode = series("buildJekyllOpenCode", "processStyles");
 
 exports.serve = series(buildSite, "startServer");
+exports.buildOpenCode = series(buildSiteForOpenCode);
 exports.default = series(buildSite);

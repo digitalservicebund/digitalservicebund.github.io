@@ -1,5 +1,6 @@
-title: Tailwind Jekyll Starter Kit
-description: A starter kit for using Tailwind with Jekyll
+title: DigitalService Engineering
+description: Open Source repository overview
+url: https://digitalservicebund.github.io
 
 collections:
   projects:
@@ -25,3 +26,5 @@ exclude:
   - src
   - tailwind.config.js
   - netlify.toml
+  - update-projects-md.js
+  - public

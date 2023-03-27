@@ -5,10 +5,20 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>DigitalService Open Source Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/DS_Logo_Favicon.png" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ site.url }}{{ site.baseurl }}/assets/images/DS_Logo_Favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css"
+    />
     <script src="https://unpkg.com/alpinejs" defer></script>
   </head>
 
-  <body x-data="{ openMenu : false }" :class="openMenu ? 'overflow-hidden' : 'overflow-visible' ">
-
+  <body
+    x-data="{ openMenu : false }"
+    :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
+  ></body>
+</html>

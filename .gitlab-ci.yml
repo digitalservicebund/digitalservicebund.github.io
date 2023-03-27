@@ -8,7 +8,7 @@ before_script:
   - bundle install
 pages:
   script:
-    - npm run build
+    - npm run build:opencode
     - cp -r _site public
   artifacts:
     paths:
