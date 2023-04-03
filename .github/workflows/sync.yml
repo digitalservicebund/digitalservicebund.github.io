@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Sync repo to OpenCoDE
-        uses: wei/git-sync@v3
+        uses: wei/git-sync@55c6b63b4f21607da0e9877ca9b4d11a29fc6d83
         with:
           source_repo: "digitalservicebund/digitalservicebund.github.io"
           source_branch: "main"
