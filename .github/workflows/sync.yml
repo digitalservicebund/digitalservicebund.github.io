@@ -14,12 +14,12 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          persist-credentials: false
+          persist-credentials: false   
+      
       - name: Sync repo to OpenCoDE
-        uses: wei/git-sync@55c6b63b4f21607da0e9877ca9b4d11a29fc6d83
-        with:
-          source_repo: "digitalservicebund/digitalservicebund.github.io"
-          source_branch: "main"
-          destination_repo: "git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git"
-          destination_branch: "main"
-          ssh_private_key: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
+        shell: bash
+        run: |
+          eval $(ssh-agent)
+          ssh-add - <<< "${{ secrets.GITLAB_SSH_PRIVATE_KEY }}"
+          git remote add opencode git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git
+          git push opencode -f
