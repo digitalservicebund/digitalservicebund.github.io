@@ -45,7 +45,7 @@ jobs:
           
           # Push
           git remote add destination git@$DESTINATION_HOST:$DESTINATION_REPO
-          git push destination -f --all
+          git push destination -f --all --prune
           git push destination -f --tags
         env:
           SSH_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
