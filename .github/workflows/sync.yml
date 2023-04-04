@@ -22,21 +22,24 @@ jobs:
           # Create ssh client config
           mkdir ~/.ssh
           cat <<EOF > ~/.ssh/config
-          Host gitlab.opencode.de
+          Host $DESTINATION_HOST
             ServerAliveInterval 60
             ServerAliveCountMax 5
             KexAlgorithms ecdh-sha2-nistp521
           EOF
           
-          # Add OpenCoDE host key
-          ssh-keyscan gitlab.opencode.de > ~/.ssh/known_hosts
+          # Add host key
+          ssh-keyscan $DESTINATION_HOST > ~/.ssh/known_hosts
           
           # Start ssh-agent and add private key
           eval $(ssh-agent)
           echo "$SSH_KEY" | sed '$ s/\n$//' | ssh-add -
           
           # Push
-          git remote add opencode git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git
-          git push opencode -f
+          git remote add destination git@DESTINATION_HOST:$DESTINATION_REPO
+          git push destination -f
         env:
           SSH_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
+          DESTINATION_HOST: gitlab.opencode.de
+          DESTINATION_REPO: digitalservicebund/digitalservicebund.git
+          
