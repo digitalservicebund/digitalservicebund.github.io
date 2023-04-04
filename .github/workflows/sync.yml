@@ -19,8 +19,6 @@ jobs:
       - name: Sync repo to OpenCoDE
         shell: bash
         run: |
-          set -x
-         
           mkdir ~/.ssh
           cat <<EOF > ~/.ssh/config
           Host gitlab.opencode.de
@@ -33,8 +31,7 @@ jobs:
           eval $(ssh-agent)
           echo "$SSH_KEY" | sed '$ s/\n$//' | ssh-add -
           
-          # ssh -T -vvvv git@gitlab.opencode.de
           git remote add opencode git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git
-          GIT_SSH_COMMAND="ssh -vvvv" git push opencode -f
+          git push opencode -f
         env:
           SSH_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
