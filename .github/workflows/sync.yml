@@ -25,4 +25,4 @@ jobs:
           git remote add opencode git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git
           git push opencode -f
         env:
-          SSH_KEY: secrets.GITLAB_SSH_PRIVATE_KEY
+          SSH_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
