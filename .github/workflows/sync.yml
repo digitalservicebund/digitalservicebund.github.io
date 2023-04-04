@@ -19,18 +19,23 @@ jobs:
       - name: Sync repo to OpenCoDE
         shell: bash
         run: |
+          # Create ssh client config
           mkdir ~/.ssh
           cat <<EOF > ~/.ssh/config
           Host gitlab.opencode.de
             ServerAliveInterval 60
             ServerAliveCountMax 5
             KexAlgorithms ecdh-sha2-nistp521
-            StrictHostKeyChecking no
           EOF
           
+          # Add OpenCoDE host key
+          ssh-keyscan gitlab.opencode.de > ~/.ssh/known_hosts
+          
+          # Start ssh-agent and add private key
           eval $(ssh-agent)
           echo "$SSH_KEY" | sed '$ s/\n$//' | ssh-add -
           
+          # Push
           git remote add opencode git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git
           git push opencode -f
         env:
