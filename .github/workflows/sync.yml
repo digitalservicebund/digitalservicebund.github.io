@@ -21,8 +21,8 @@ jobs:
         run: |
           eval $(ssh-agent)
           echo "$SSH_KEY" | sed '$ s/\n$//' | ssh-add -
-          ssh -T -vvvv git@gitlab.opencode.de
+          ssh -T -o KexAlgorithms=ecdh-sha2-nistp521 -vvvv git@gitlab.opencode.de
           git remote add opencode git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git
-          git push opencode -f
+          GIT_SSH_COMMAND="ssh -o KexAlgorithms=ecdh-sha2-nistp521" git push opencode -f
         env:
           SSH_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
