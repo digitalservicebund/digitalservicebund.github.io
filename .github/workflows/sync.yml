@@ -37,6 +37,9 @@ jobs:
           eval $(ssh-agent)
           echo "$SSH_KEY" | sed '$ s/\n$//' | ssh-add -
           
+          # List local branches
+          git branch --list
+          
           # Push
           git remote add destination git@$DESTINATION_HOST:$DESTINATION_REPO
           git push destination -f --all
