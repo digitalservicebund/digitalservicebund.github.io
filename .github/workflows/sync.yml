@@ -36,7 +36,7 @@ jobs:
           echo "$SSH_KEY" | sed '$ s/\n$//' | ssh-add -
           
           # Push
-          git remote add destination git@DESTINATION_HOST:$DESTINATION_REPO
+          git remote add destination git@$DESTINATION_HOST:$DESTINATION_REPO
           git push destination -f
         env:
           SSH_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
