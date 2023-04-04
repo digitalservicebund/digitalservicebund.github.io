@@ -20,6 +20,9 @@ jobs:
         shell: bash
         run: |
           eval $(ssh-agent)
-          ssh-add - <<< "${{ secrets.GITLAB_SSH_PRIVATE_KEY }}"
+          echo "$SSH_KEY" | sed '$ s/\n$//' | ssh-add -
+          git -T -vvvv git@gitlab.opencode.de
           git remote add opencode git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git
           git push opencode -f
+        env:
+          SSH_KEY: secrets.GITLAB_SSH_PRIVATE_KEY
