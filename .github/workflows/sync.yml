@@ -19,6 +19,8 @@ jobs:
       - name: Sync repo to OpenCoDE
         shell: bash
         run: |
+          set -x
+          
           # Create ssh client config
           mkdir ~/.ssh
           cat <<EOF > ~/.ssh/config
