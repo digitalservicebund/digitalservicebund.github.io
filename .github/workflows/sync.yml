@@ -22,13 +22,20 @@ jobs:
           set -x
           
           export ssh_options="-o KexAlgorithms=ecdh-sha2-nistp521"
-          cat /etc/ssh/ssh_config
+         
+          cat <<EOF >> /etc/ssh/ssh_config
+          Host gitlab.opencode.de
+            ServerAliveInterval 60
+            ServerAliveCountMax 5
+            KexAlgorithms ecdh-sha2-nistp521
+            StrictHostKeyChecking no
+          EOF
           
           eval $(ssh-agent)
           echo "$SSH_KEY" | sed '$ s/\n$//' | ssh-add -
           
-          # ssh -T -o StrictHostKeyChecking=no $ssh_options -vvvv git@gitlab.opencode.de
+          # ssh -T $ssh_options -vvvv git@gitlab.opencode.de
           git remote add opencode git@gitlab.opencode.de:digitalservicebund/digitalservicebund.git
-          GIT_SSH_COMMAND="ssh $ssh_options -vvvv" git push opencode -f
+          GIT_SSH_COMMAND="ssh -vvvv" git push opencode -f
         env:
           SSH_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
