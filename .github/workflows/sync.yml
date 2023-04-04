@@ -21,7 +21,7 @@ jobs:
         run: |
           set -x
          
-          cat <<EOF >> ~/.ssh/config
+          cat <<EOF > ~/.ssh/config
           Host gitlab.opencode.de
             ServerAliveInterval 60
             ServerAliveCountMax 5
