@@ -1,12 +1,12 @@
 # Overview of DigitalService Projects
 
 ## DESIGN-SYSTEM
-- [style-dictionary](https://github.com/digitalservicebund/style-dictionary) - Keep styles consistent and synchronized across multiple platforms.
-- [digital-service-library](https://github.com/digitalservicebund/digital-service-library) - Component Library for and by DigitalService
+- [style-dictionary](https://github.com/digitalservicebund/style-dictionary) - Angie Design System's design tokens
+- [angie](https://github.com/digitalservicebund/angie) - CSS Framework for the Angie Design System
 
 ## PROJECTS
 - [mitra-frontend](https://github.com/digitalservicebund/mitra-frontend) - Contract generator web application
-- [verika-architecture](https://github.com/digitalservicebund/verika-architecture) - Architecture of the planned VeRIKA / NeuRIS project
+- [neuris-architecture](https://github.com/digitalservicebund/neuris-architecture) - Architecture of the planned VeRIKA / NeuRIS project
 - [ris-backend-service](https://github.com/digitalservicebund/ris-backend-service) - RIS Backend/API service
 - [steuerlotse](https://github.com/digitalservicebund/steuerlotse) - Code repository of the Steuerlotse by DigitalService
 - [grundsteuer](https://github.com/digitalservicebund/grundsteuer) - Code repository of the grundsteuer project by DigitalService

@@ -1,8 +1,8 @@
 - title: style-dictionary
   url: https://github.com/digitalservicebund/style-dictionary
-  description: "Keep styles consistent and synchronized across multiple platforms."
+  description: "Angie Design System's design tokens"
   license: MIT
-- title: digital-service-library
-  url: https://github.com/digitalservicebund/digital-service-library
-  description: Component Library for and by DigitalService
+- title: angie
+  url: https://github.com/digitalservicebund/angie
+  description: "CSS Framework for the Angie Design System"
   license: MIT
