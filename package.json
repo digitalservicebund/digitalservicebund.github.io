@@ -4,7 +4,7 @@
   "description": "Simple page to show the projects of digitalservice at a glance",
   "main": "gulpfile.babel.js",
   "devDependencies": {
-    "@digitalservice4germany/style-dictionary": "^0.0.4",
+    "@digitalservice4germany/style-dictionary": "^1.1.1",
     "autoprefixer": "^10.4.14",
     "babel-preset-env": "1.7.0",
     "babel-register": "6.26.0",
