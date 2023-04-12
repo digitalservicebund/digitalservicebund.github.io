@@ -34,7 +34,7 @@
       navigation_pages %}
       <li class="my-px">
         <a
-          href="{{ p.url }}"
+          href="{{ site.url }}{{ site.baseurl }}{{ p.url }}"
           class="font-light py-2 px-3 h-64 px-4 hover:text-blue-800 rounded-sm {% if p.url == page.url %}text-blue-800{% endif %}"
         >
           {{ p.title }}
@@ -58,7 +58,7 @@
     navigation_pages %}
     <li class="border-b border-inherit">
       <a
-        href="{{ p.url }}"
+        href="{{ site.url }}{{ site.baseurl }}{{ p.url }}"
         class="inline-flex items-center font-light py-2 px-3 h-36 px-4 pl-8 w-full hover:bg-gray-200 rounded-sm {% if p.url == page.url %}text-blue-800 bg-gray-100{% endif %}"
       >
         {{ p.title }}
