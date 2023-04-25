@@ -10,3 +10,7 @@
   url: https://github.com/digitalservicebund/terraform-modules
   description: "Reusable terraform modules to work with open telecom cloud"
   license: MIT
+- title: troi-library
+  url: https://github.com/digitalservicebund/troi-library
+  description: "API library wrapper to interact with troi for time tracking"
+  license: MIT
