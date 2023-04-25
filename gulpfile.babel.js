@@ -23,6 +23,8 @@ task("buildJekyll", () => {
   const args = ["exec", jekyll, "build"];
 
   if (isDevelopmentBuild) {
+    args.push("--config");
+    args.push("_config.yml,_config.dev.yml");
     args.push("--incremental");
   }
 
