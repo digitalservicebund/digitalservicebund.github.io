@@ -23,7 +23,7 @@ jobs:
       - name: validate github workflow files
         uses: digitalservicebund/github-actions/github-actions-linter@df6e19d8472c90dd612a8c9497fd22d501e710c0
 
-      - uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@d37167af451eb51448db3354e1057b75c4b268f7
         with:
           bundler-cache: true
 
@@ -35,7 +35,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: success()
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@c05ee637ec73429400a359430db8e5629f3f2564
         with:
           target_branch: gh-pages
           build_dir: _site
