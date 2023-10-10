@@ -9,7 +9,7 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL"
+name: "CI+CodeQL"
 
 on:
   push:
@@ -39,6 +39,25 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+
+      - name: validate github workflow files
+        uses: digitalservicebund/github-actions/github-actions-linter@df6e19d8472c90dd612a8c9497fd22d501e710c0
+
+      - uses: ruby/setup-ruby@e92b7971f0f3a08d2cf29cceb1d82d4c704a2a78
+        with:
+          bundler-cache: true
+
+      - name: Install node modules
+        run: npm ci
+
+      - name: Build page
+        run: npm run build
 
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
