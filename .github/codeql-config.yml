@@ -1,0 +1,3 @@
+paths-ignore:
+  - ventor/
+  - node_modules/
