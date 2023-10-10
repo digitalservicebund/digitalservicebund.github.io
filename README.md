@@ -2,7 +2,7 @@
 
 Overview of [DigitalService Projects](./projects.md)
 
-Github: [https://digitalservice.github.io](https://digitalservice.github.io)
+Github: [https://digitalservicebund.github.io/](https://digitalservicebund.github.io/)
 OpenCode: [https://digitalservicebund.usercontent.opencode.de/digitalservicebund/](https://digitalservicebund.usercontent.opencode.de/digitalservicebund/)
 
 ## How-To
