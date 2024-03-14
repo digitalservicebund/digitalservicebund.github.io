@@ -15,7 +15,7 @@ defaults:
       layout: "default"
 
 include:
-  - security.txt
+  - .well-known/security.txt
 
 exclude:
   - Gemfile
