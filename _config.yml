@@ -14,7 +14,8 @@ defaults:
     values:
       layout: "default"
 
-include: [".well-known"] 
+include:
+  - ".well-known"
 
 exclude:
   - Gemfile
