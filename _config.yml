@@ -23,6 +23,7 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - SECURITY.md
   - src
   - tailwind.config.js
   - netlify.toml
