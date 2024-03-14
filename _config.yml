@@ -14,6 +14,8 @@ defaults:
     values:
       layout: "default"
 
+include: [".well-known"] 
+
 exclude:
   - Gemfile
   - Gemfile.lock
