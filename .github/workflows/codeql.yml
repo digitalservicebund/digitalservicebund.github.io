@@ -47,7 +47,7 @@ jobs:
           cache: "npm"
 
       - name: validate github workflow files
-        uses: digitalservicebund/github-actions/github-actions-linter@df6e19d8472c90dd612a8c9497fd22d501e710c0
+        uses: digitalservicebund/github-actions-linter@dccac3ada437947aada4bc901daff08ceb87c3f1 # v0.1.11
 
       - uses: ruby/setup-ruby@d37167af451eb51448db3354e1057b75c4b268f7
         with:
