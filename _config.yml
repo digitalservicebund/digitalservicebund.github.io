@@ -14,6 +14,9 @@ defaults:
     values:
       layout: "default"
 
+include:
+  - security.txt
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -23,6 +26,7 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - SECURITY.md
   - src
   - tailwind.config.js
   - netlify.toml
