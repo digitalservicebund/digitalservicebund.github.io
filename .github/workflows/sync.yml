@@ -48,6 +48,6 @@ jobs:
           git push destination -f --all --prune
           git push destination -f --tags
         env:
-          SSH_KEY: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
+          SSH_KEY: ${{ secrets.OPENCODE_SSH_PRIVATE_KEY }}
           DESTINATION_HOST: gitlab.opencode.de
           DESTINATION_REPO: digitalservicebund/digitalservicebund.git
