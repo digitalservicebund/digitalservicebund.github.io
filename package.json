@@ -1,6 +1,6 @@
 {
   "name": "digitalservice.github.io",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple page to show the projects of digitalservice at a glance",
   "main": "gulpfile.babel.js",
   "devDependencies": {
