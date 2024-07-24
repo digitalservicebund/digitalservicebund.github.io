@@ -34,7 +34,6 @@ exclude:
   - package-lock.json
   - README.md
   - SECURITY.md
-  - src
   - postcss.config.js
   - tailwind.config.js
   - netlify.toml
