@@ -1,5 +1,10 @@
 module.exports = {
-  content: [`_site/**/*.html`],
+  content: [
+    "./_includes/**/*.html",
+    "./_layouts/**/*.html",
+    "./_posts/*.md",
+    "./*.html",
+  ],
   theme: {
     extend: {},
   },

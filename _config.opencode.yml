@@ -1,2 +1,8 @@
 url: https://digitalservicebund.usercontent.opencode.de/
 baseurl: digitalservicebund
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false

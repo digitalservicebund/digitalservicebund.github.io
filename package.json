@@ -14,9 +14,9 @@
   },
   "scripts": {
     "dev": "bundle exec jekyll serve --config _config.yml,_config.dev.yml --livereload --incremental",
-    "build": "bundle exec jekyll build --config _config.yml,_config.dev.yml",
-    "build:production": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml",
-    "build:opencode": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config.opencode.yml",
+    "build": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build --config _config.yml,_config.dev.yml",
+    "build:production": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build --config _config.yml",
+    "build:opencode": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build --config _config.yml,_config.opencode.yml",
     "docs:markdown": "node ./update-projects-md.js"
   },
   "repository": {
