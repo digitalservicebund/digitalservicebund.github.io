@@ -2,6 +2,12 @@ title: DigitalService Open Source
 description: Open Source repository overview
 url: https://digitalservicebund.github.io
 
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
 collections:
   projects:
     output: true

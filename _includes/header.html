@@ -1,38 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="{{ site.url }}{{ site.baseurl }}/assets/images/DS_Logo_Favicon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css"
-    />
-    <script src="https://unpkg.com/alpinejs" defer></script>
-    <!-- Added because Github Pages does not support setting headers. Find more at https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html#best-for-now-legacy-browser-frame-breaking-script-->
-    <style id="antiClickjack">
-        body {
-            display: none !important;
-        }
-    </style>
-    <script type="text/javascript">
-        if (self === top) {
-            var antiClickjack = document.getElementById("antiClickjack");
-            antiClickjack.parentNode.removeChild(antiClickjack);
-        } else {
-            top.location = self.location;
-        }
-    </script>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>{{ site.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="{{ site.url }}{{ site.baseurl }}/assets/images/DS_Logo_Favicon.png"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css"
+        />
+        <script src="https://unpkg.com/alpinejs" defer></script>
+        <!-- Added because Github Pages does not support setting headers. Find more at https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html#best-for-now-legacy-browser-frame-breaking-script-->
+        <style id="antiClickjack">
+            body {
+                display: none !important;
+            }
+        </style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
+    </head>
 
-  <body
-    x-data="{ openMenu : false }"
-    :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
-  ></body>
+    <body
+        x-data="{ openMenu : false }"
+        :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
+    ></body>
 </html>

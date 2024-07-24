@@ -5,28 +5,19 @@
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "@digitalservice4germany/style-dictionary": "^2.0.0",
-    "autoprefixer": "^10.4.17",
-    "babel-preset-env": "1.7.0",
-    "babel-register": "6.26.0",
-    "browser-sync": "^3.0.2",
-    "browsersync": "0.0.1-security",
-    "cross-env": "7.0.3",
-    "cross-spawn": "7.0.3",
-    "cssnano": "^6.0.5",
-    "gulp": "4.0.2",
-    "gulp-postcss": "^10.0.0",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.4",
     "js-yaml": "^4.1.0",
-    "postcss": "^8.4.35",
-    "postcss-import": "^16.0.1",
-    "tailwindcss": "^3.4.1"
+    "postcss": "^8.4.39",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.4.4"
   },
   "scripts": {
-    "build:production": "cross-env NODE_ENV=production gulp",
-    "build:opencode": "cross-env NODE_ENV=production gulp buildOpenCode",
-    "build:dev": "cross-env NODE_ENV=development gulp",
-    "build": "npm run build:production",
-    "dev": "cross-env NODE_ENV=development gulp serve",
-    "start": "npm run dev"
+    "dev": "bundle exec jekyll serve --config _config.yml,_config.dev.yml --livereload --incremental",
+    "build": "bundle exec jekyll build --config _config.yml,_config.dev.yml",
+    "build:production": "bundle exec jekyll build --config _config.yml",
+    "build:opencode": "bundle exec jekyll build --config _config.yml,_config.opencode.yml",
+    "docs:markdown": "node ./update-projects-md.js"
   },
   "repository": {
     "type": "git",

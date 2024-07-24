@@ -6,3 +6,4 @@ gem "jekyll"
 gem "jekyll-sass-converter", "~> 2.0"
 
 gem "webrick", "~> 1.8"
+gem 'jekyll-postcss', "~> 0.5"

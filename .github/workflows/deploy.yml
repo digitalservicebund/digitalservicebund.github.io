@@ -14,11 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: ".nvmrc"
-          cache: "npm"
+      # - name: Setup Node
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version-file: ".nvmrc"
+      #     cache: "npm"
 
       - name: validate github workflow files
         uses: digitalservicebund/github-actions-linter@dccac3ada437947aada4bc901daff08ceb87c3f1 # v0.1.11
@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build page
-        run: npm run build
+        run: npm run build:production
 
       - name: Deploy to GitHub Pages
         if: success()

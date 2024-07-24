@@ -1,2 +1,8 @@
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
 title: (dev) DigitalService Engineering
 url: http://localhost:4000
