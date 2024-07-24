@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build page
-        run: npm run build:production && ls -al ./_site
+        run: npm run build:production && ls -al ./_site  && ls -al ./_site/assets
 
       - name: Deploy to GitHub Pages
         if: success()
