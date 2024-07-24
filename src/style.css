@@ -1,0 +1,32 @@
+@tailwind base;
+
+@layer base {
+    h1 {
+        @apply my-4;
+        @apply mt-8;
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply my-4;
+        @apply mt-8;
+        @apply text-xl;
+    }
+
+    h2 {
+        @apply my-4;
+        @apply mt-8;
+        @apply text-lg;
+    }
+
+    ul {
+        @apply list-inside;
+        @apply list-disc;
+    }
+}
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}
