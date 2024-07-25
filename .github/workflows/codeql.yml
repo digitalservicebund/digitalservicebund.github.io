@@ -36,10 +36,10 @@ jobs:
 
       # Validate github workflow files
       - name: validate github workflow files
-        uses: digitalservicebund/github-actions-linter@dccac3ada437947aada4bc901daff08ceb87c3f1 # v0.1.11
+        uses: digitalservicebund/github-actions-linter@3b941278d52936497add0afdebbf5c6e6ee8bd5d # v0.1.13
 
       # Cache dependencies to speed up workflows
-      - uses: ruby/setup-ruby@d37167af451eb51448db3354e1057b75c4b268f7
+      - uses: ruby/setup-ruby@50ba3386b050ad5b97a41fcb81240cbee1d1821f # v1.188.0
         with:
           bundler-cache: true
 
@@ -53,7 +53,7 @@ jobs:
 
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@8e0b1c74b1d5a0077b04d064c76ee714d3da7637
+        uses: github/codeql-action/init@064a406de026ea27990a5b507b56911401ca2f95 # v2.18.0
         with:
           languages: ${{ matrix.language }}
           config: |
@@ -64,9 +64,9 @@ jobs:
       # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
       # If this step fails, then you should remove it and run the build manually (see below)
       - name: Autobuild
-        uses: github/codeql-action/autobuild@8e0b1c74b1d5a0077b04d064c76ee714d3da7637
+        uses: github/codeql-action/autobuild@064a406de026ea27990a5b507b56911401ca2f95 # v2.18.0
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@8e0b1c74b1d5a0077b04d064c76ee714d3da7637
+        uses: github/codeql-action/analyze@064a406de026ea27990a5b507b56911401ca2f95 # v2.18.0
         with:
           category: "/language:${{matrix.language}}"
