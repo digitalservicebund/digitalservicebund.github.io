@@ -25,6 +25,7 @@ jobs:
 
       - uses: ruby/setup-ruby@50ba3386b050ad5b97a41fcb81240cbee1d1821f # v1.188.0
         with:
+          ruby-version: 3.3.4
           bundler-cache: true
 
       - name: Install node modules
