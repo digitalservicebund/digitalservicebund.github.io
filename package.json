@@ -5,7 +5,7 @@
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "@digitalservice4germany/style-dictionary": "^2.0.0",
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.4",
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.40",
