@@ -6,7 +6,7 @@
   "devDependencies": {
     "@digitalservice4germany/style-dictionary": "^2.0.0",
     "autoprefixer": "^10.4.20",
-    "cssnano": "^7.0.4",
+    "cssnano": "^7.0.6",
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.40",
     "postcss-import": "^16.1.0",
