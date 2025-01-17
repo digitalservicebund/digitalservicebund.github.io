@@ -1,0 +1,236 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>DigitalService Open Source</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://digitalservicebund.github.io/assets/images/DS_Logo_Favicon.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://digitalservicebund.github.io/assets/css/main.css"
+        />
+        <script src="https://unpkg.com/alpinejs" defer></script>
+        <!-- Added because Github Pages does not support setting headers. Find more at https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html#best-for-now-legacy-browser-frame-breaking-script-->
+        <style id="antiClickjack">
+            body {
+                display: none !important;
+            }
+        </style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
+        <script defer data-domain="digitalservicebund.github.io" src="https://plausible.io/js/script.js"></script>
+    </head>
+
+    <body
+        x-data="{ openMenu : false }"
+        :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
+    ></body>
+</html>
+
+
+<div class="w-full mx-auto h-screen">
+  <header class="flex justify-between items-center bg-white drop-shadow-sm px-8">
+  <a href="/" class="text-lg font-bold"
+    ><img
+      class="ml-32 w-64"
+      alt="DigitalService logo"
+      src="https://digitalservicebund.github.io/assets/images/ds4g-logo.svg"
+  /></a>
+  <button
+    class="flex md:hidden flex-col items-center align-middle"
+    @click="openMenu = !openMenu"
+    :aria-expanded="openMenu"
+    aria-controls="mobile-navigation"
+    aria-label="Navigation Menu"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-24 w24"
+      fill="none"
+      viewBox="0 0 32 32"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
+    <span class="text-xs">Menu</span>
+  </button>
+  <nav class="hidden md:flex">
+    <ul class="flex flex-row gap-4 list-none">
+       
+      <li class="my-px">
+        <a
+          href="https://digitalservicebund.github.io/"
+          class="font-light py-2 px-3 h-64 px-4 hover:text-blue-800 rounded-sm text-blue-800"
+        >
+          Home
+        </a>
+      </li>
+      
+      <li class="my-px">
+        <a
+          href="https://digitalservicebund.github.io/projects/design-system.html"
+          class="font-light py-2 px-3 h-64 px-4 hover:text-blue-800 rounded-sm "
+        >
+          Design System
+        </a>
+      </li>
+      
+      <li class="my-px">
+        <a
+          href="https://digitalservicebund.github.io/projects/projects.html"
+          class="font-light py-2 px-3 h-64 px-4 hover:text-blue-800 rounded-sm "
+        >
+          Projects & Products
+        </a>
+      </li>
+      
+      <li class="my-px">
+        <a
+          href="https://digitalservicebund.github.io/projects/reusables.html"
+          class="font-light py-2 px-3 h-64 px-4 hover:text-blue-800 rounded-sm "
+        >
+          Reusables
+        </a>
+      </li>
+      
+      <li class="my-px">
+        <a
+          href="https://digitalservicebund.github.io/projects/templates.html"
+          class="font-light py-2 px-3 h-64 px-4 hover:text-blue-800 rounded-sm "
+        >
+          Templates
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<nav
+  id="mobile-navigation"
+  class="fixed top-0 right-0 bottom-0 left-0 backdrop-blur z-10"
+  :class="openMenu ? 'visible' : 'invisible' "
+  x-cloak
+>
+  <ul
+    class="absolute top-0 right-0 bottom-0 w-10/12 py-4 bg-white drop-shadow-2xl z-10 transition-all list-none"
+    :class="openMenu ? 'translate-x-0' : 'translate-x-full'"
+  >
+     
+    <li class="border-b border-inherit">
+      <a
+        href="https://digitalservicebund.github.io/"
+        class="inline-flex items-center font-light py-2 px-3 h-36 px-4 pl-8 w-full hover:bg-gray-200 rounded-sm text-blue-800 bg-gray-100"
+      >
+        Home
+      </a>
+    </li>
+    
+    <li class="border-b border-inherit">
+      <a
+        href="https://digitalservicebund.github.io/projects/design-system.html"
+        class="inline-flex items-center font-light py-2 px-3 h-36 px-4 pl-8 w-full hover:bg-gray-200 rounded-sm "
+      >
+        Design System
+      </a>
+    </li>
+    
+    <li class="border-b border-inherit">
+      <a
+        href="https://digitalservicebund.github.io/projects/projects.html"
+        class="inline-flex items-center font-light py-2 px-3 h-36 px-4 pl-8 w-full hover:bg-gray-200 rounded-sm "
+      >
+        Projects & Products
+      </a>
+    </li>
+    
+    <li class="border-b border-inherit">
+      <a
+        href="https://digitalservicebund.github.io/projects/reusables.html"
+        class="inline-flex items-center font-light py-2 px-3 h-36 px-4 pl-8 w-full hover:bg-gray-200 rounded-sm "
+      >
+        Reusables
+      </a>
+    </li>
+    
+    <li class="border-b border-inherit">
+      <a
+        href="https://digitalservicebund.github.io/projects/templates.html"
+        class="inline-flex items-center font-light py-2 px-3 h-36 px-4 pl-8 w-full hover:bg-gray-200 rounded-sm "
+      >
+        Templates
+      </a>
+    </li>
+    
+  </ul>
+  <button
+    class="absolute top-0 right-0 bottom-0 left-0"
+    @click="openMenu = !openMenu"
+    :aria-expanded="openMenu"
+    aria-controls="mobile-navigation"
+    aria-label="Close Navigation Menu"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-32 w-32 p-2 absolute top-4 left-4 bg-white border-solid border border-blue-800 rounded text-blue-800"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+</nav>
+
+  <main
+    role="main"
+    class="container md:px-4 mx-auto w-full pt-16 px-20 font-light"
+  >
+    <h1 class="text-blue-900 text-3xl font-bold tracking-wide lg:text-5xl">
+  DigitalService Engineering
+</h1>
+<h2 class="text-blue-900 italic text-xl font-light tracking-tight">
+  Open source at our heart
+</h2>
+<p class="mt-16 text-lg text-blue-900 font-light">
+  We believe in open source and want to support it by publishing our projects,
+  templates and other assets.
+</p>
+<p class="mt-16 text-lg text-blue-900 font-light">
+  We also want to share our knowledge and experience with the community.
+</p>
+<p class="mt-16 text-lg text-blue-900 font-light">
+  Head to
+  <a
+    class="text-blue-700 hover:text-blue-800"
+    href="https://digitalservice.bund.de"
+    >digitalservice.bund.de</a
+  >, if you want to learn more about the DigitalService.
+</p>
+
+  </main>
+</div>
+<div class=""></div>
+
+  </body>
+</html>
